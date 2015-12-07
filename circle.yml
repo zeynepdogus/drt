@@ -4,7 +4,6 @@ machine:
 general:
   artifacts:
     - "build/libs/*.jar”
-    - "build/distributions/*.zip"
 machine:
   services:
     - docker
