@@ -1,0 +1,15 @@
+machine:
+  java:
+    version: oraclejdk8
+general:
+  artifacts:
+    - "build/libs/*.jar”
+    - "build/distributions/*.zip"
+machine:
+  services:
+    - docker
+  environment:
+    toolset_branch: master
+    server_type: circle
+    used_modules: check_cache,code_style_check,unit_tests
+   
