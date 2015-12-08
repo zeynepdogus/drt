@@ -3,7 +3,6 @@ machine:
     version: oraclejdk8
 general:
   artifacts:
-    - "build/libs/*.jar"
-    - "build/distributions/*.zip"
+    - target/universal
 
   
